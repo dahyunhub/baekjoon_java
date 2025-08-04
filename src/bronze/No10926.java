@@ -1,0 +1,15 @@
+package bronze;
+
+import java.util.Scanner;
+
+public class No10926 {
+	public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		String junhaId = sc.nextLine();
+		
+		if (junhaId.equals(junhaId)) {
+			System.out.println(junhaId + "??!");
+		}
+		sc.close();
+	}
+}

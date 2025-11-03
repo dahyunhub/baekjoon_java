@@ -7,7 +7,7 @@ public class No5622 {
 		Scanner sc = new Scanner(System.in);
 		String word = sc.next();
 		String dial[] = { "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ" };
-
+		
 		int n = 0;
 		int totalTime = 0;
 

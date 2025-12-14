@@ -1,0 +1,29 @@
+package bronze;
+
+import java.util.Scanner;
+
+public class No1978 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+
+		int countPrime = 0;
+
+		for (int i = 0; i < n; ++i) {
+			int num = sc.nextInt();
+			boolean isPrime = true;
+
+			for (int j = 2; j < num; ++j) {
+				if (num % j == 0) {
+					isPrime = false;
+					break;
+				}
+			}
+
+			if (isPrime && num > 1) {
+				++countPrime;
+			}
+		}
+		System.out.println(countPrime);
+	}
+}

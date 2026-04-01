@@ -22,15 +22,10 @@ public class Main {
 
         // for문 돌려서 최적해를 찾아야함
 
-
         for (int i = N - 1; i >= 0; i--) {
-            while (coins[i] <= K) {
-                K -= coins[i];
-                cnt++;
-
-            }
+            cnt += K / coins[i];
+            K %= coins[i];
         }
-
         System.out.println(cnt);
     }
 }

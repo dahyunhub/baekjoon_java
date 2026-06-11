@@ -24,5 +24,19 @@ hs_err_pid*
 replay_pid*
 /bin/
 
+# IDE
+.classpath
+.project
+.settings/
+.idea/
+.vscode/
+*.iml
+
+# Build output
+out/
+target/
+build/
+.gradle/
+
 # macOS
 .DS_Store
